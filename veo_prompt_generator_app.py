@@ -103,3 +103,22 @@ Tambahkan {tambahan}.
 else:
     if submitted:
         st.warning("❗ Harap isi minimal Subjek, Aksi, Ekspresi, dan Tempat.")
+st.markdown(
+    """
+    <style>
+    .main {
+        background-color: #f0f2f6;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+st.title("🎬 Veo 3 Prompt Generator")
+col1, col2 = st.columns(2)
+with col1:
+    st.text_input("Subjek")
+with col2:
+    st.text_input("Aksi")
+st.image("https://link-to-your-logo.png", width=200)
